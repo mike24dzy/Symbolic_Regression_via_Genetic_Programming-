@@ -1,0 +1,24 @@
+clear
+clc
+y = 100000:100000:1000000;
+f1 = load('RDdata.mat');
+x1 = f1.mean0;
+s1 = f1.std0;
+f2 = load('CLdata.mat');
+x2 = f2.mean0;
+s2 = f2.std0;
+f3 = load('GAdata.mat');
+x3 = f3.mean0;
+s3 = f3.std0;
+f4 = load('GGAdata.mat');
+x4 = f4.mean0;
+s4 = f4.std0;
+
+a = s1(y);
+b = s2(y);
+c = s3(y);
+d = s4(y);
+
+
+a = [0.0201 0.01577 0.01217 0.01109 0.01678 0.0120 0.0108 0.0100 0.0098 0.0088]'
+b = [0.0400 0.0189 0.0097 0.]'
